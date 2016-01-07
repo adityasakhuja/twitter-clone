@@ -3,12 +3,26 @@
 </head>
 
 <body>
-  <h1>Twitter Clone: Created using Meteor!</h1>
+  <div class="container">
+  	<h1>Twitter Clone: Created using Meteor!</h1>
 
-  {{> hello}}
+  	{{> tweetBox}}
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="tweetBox">
+  <div class="tweetbox-container">
+	<div class="panel panel-default tweetbox col-md-6">
+		<div class="panel-body">
+			<!-- Text box for tweet content -->
+			<textarea class="form-control" id="tweetText" placeholder="What's happening?" rows="3"></textarea>
+
+			<!-- Character count & tweet button -->
+			<div class="pull-right btnGroup">
+				<strong class="{{charClass}}">{{charCount}}</strong>
+				<button class="btn btn-info pull-right" type="button" {{disableButton}}>Tweet</button>
+			</div>
+		</div>
+	</div>
+  </div>
 </template>
