@@ -3,11 +3,10 @@
 </head>
 
 <body>
-  <div class="container">
-  	<h1>Twitter Clone: Created using Meteor!</h1>
 
-  	{{> tweetBox}}
-  </div>
+	{{> loginButtons}}
+	{{> tweetBox}}
+	
 </body>
 
 <template name="tweetBox">
@@ -25,4 +24,14 @@
 		</div>
 	</div>
   </div>
+</template>
+
+<template name="userManagement">
+	<h4>New User?</h4>
+	<div class="form-group">
+		<input class="form-control input-sm" id="signup-fullname" placeholder="Username">
+		<input class="form-control input-sm" id="signup-username" placeholder="Username">
+		<input class="form-control input-sm" id="signup-password" placeholder="Password" type="password">
+	</div>
+	<button type="button" class="btn btn-info fullbutton" id="signup">Sign up</button>
 </template>

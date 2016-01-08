@@ -23,3 +23,24 @@
 	margin-right: 10px;
 	color: red;
 }
+
+.user-container {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.user-container h4 {
+	color: gray;
+}
+
+.user-container .fullbutton {
+	width: 100%;
+}
+
+.user-container .input-sm {
+	margin-bottom: 5px;
+}
+
+.user-container .login {
+	margin-bottom: 15px;
+}
